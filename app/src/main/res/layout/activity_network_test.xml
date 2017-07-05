@@ -1,0 +1,94 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp" tools:context=".NetworkTestActivity">
+
+    <Button
+        android:id="@+id/GPS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:onClick="testLocation"
+        android:text="Location"
+        android:visibility="visible" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:id="@+id/LOCATION_STATUS"
+        android:text="Locatoin Test"
+        android:layout_below="@+id/GPS"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"    />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/WIFI"
+        android:text="Toggle Wifi"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/LOCATION_STATUS"
+        android:onClick="toggleWifi" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/CONNECT_WIFI"
+        android:text="Connect to Wifi Network"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_below="@+id/WIFI"
+        android:onClick="connectWifiNetwork" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:id="@+id/WIFI_STATUS"
+        android:text="Wifi Test"
+        android:layout_below="@+id/CONNECT_WIFI"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"    />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/BLUETOOTH"
+        android:text="Bluetooth"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_below="@+id/WIFI_STATUS"
+        android:onClick="testBluetooth" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:id="@+id/BLUETOOTH_STATUS"
+        android:text="Bluetooth Test"
+        android:layout_below="@+id/BLUETOOTH"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"    />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/REFRESH"
+        android:text="Refresh Statuses"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/BLUETOOTH_STATUS"
+        android:onClick="refreshStatus" />
+
+</RelativeLayout>
+
